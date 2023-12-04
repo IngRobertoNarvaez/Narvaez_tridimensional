@@ -1,18 +1,19 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-int main(int argc, char const *argv[])
+int main()
 {
     int ifila;
     int jcolumna;
-    int kprofundi;
+    int kcaras;
     printf("Ingresar Fila i :");
     scanf("\n %d", &ifila);
     printf("Ingresar Columna j :");
     scanf("\n %d", &jcolumna);
-    printf("Ingresar profundidad k :");
-    scanf("\n %d", &kprofundi);
-    int matriz[kprofundi][ifila][jcolumna];
+    printf("Ingresar caras k :");
+    scanf("\n %d", &kcaras);
+    int matriz[kcaras][ifila][jcolumna];
     srand(time(NULL));
+
     return 0;
 }
