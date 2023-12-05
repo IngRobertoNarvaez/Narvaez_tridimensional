@@ -11,8 +11,8 @@ int main()
     printf("Ingresar Columna  :");
     scanf("\n %d", &jcolumna);
     printf("Ingresar caras  :");
-    printf("\n");
     scanf("\n %d", &kcaras);
+    printf("\n");
     srand(time(NULL));
     int matriz[kcaras][ifila][jcolumna];
     // Se iniciara las matrices de valor cero
