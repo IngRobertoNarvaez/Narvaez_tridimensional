@@ -11,6 +11,7 @@ int main()
     printf("Ingresar Columna  :");
     scanf("\n %d", &jcolumna);
     printf("Ingresar caras  :");
+    printf("\n");
     scanf("\n %d", &kcaras);
     srand(time(NULL));
     int matriz[kcaras][ifila][jcolumna];
@@ -39,11 +40,12 @@ int main()
     // se imprime la matriz
     for (int k = 0; k < kcaras; k++)
     {
+        printf("Matriz de cara %d:\n", k + 1);
         for (int i = 0; i < ifila; i++)
         {
+
             for (int j = 0; j < jcolumna; j++)
             {
-
                 printf("%d ", matriz[k][i][j]);
             }
             printf("\n");
