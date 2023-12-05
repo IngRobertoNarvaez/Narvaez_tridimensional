@@ -13,8 +13,8 @@ int main()
     printf("Ingresar caras  :");
     scanf("\n %d", &kcaras);
     srand(time(NULL));
-    int matriz[ifila][jcolumna][kcaras];
-    // Se iniciara las matrices de valor
+    int matriz[kcaras][ifila][jcolumna];
+    // Se iniciara las matrices de valor cero
     for (int k = 0; k < kcaras; k++)
     {
         for (int i = 0; i < ifila; i++)
@@ -25,6 +25,30 @@ int main()
             }
         }
     }
+    // La matriz de numeros unos se iniciara aqui
+    // Este fragmento de codigo establece todos los elementos de la
+    // ultima matriz del arreglo tridimensional en 1 mientras que
+    // todas las demas matrices se establecen en 0.
+    for (int i = 0; i < ifila; i++)
+    {
+        for (int j = 0; j < jcolumna; j++)
+        {
+            matriz[kcaras - 1][i][j] = 1;
+        }
+    }
+    // se imprime la matriz
+    for (int k = 0; k < kcaras; k++)
+    {
+        for (int i = 0; i < ifila; i++)
+        {
+            for (int j = 0; j < jcolumna; j++)
+            {
 
+                printf("%d ", matriz[k][i][j]);
+            }
+            printf("\n");
+        }
+        printf("\n");
+    }
     return 0;
 }
